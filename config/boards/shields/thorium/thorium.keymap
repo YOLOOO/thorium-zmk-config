@@ -27,18 +27,6 @@
 #define ACCEN &mo 4
 #define SETT &mo 5
 
-/* device tree */
-
-&mt {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
-};
-
-&lt {
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -84,10 +72,10 @@
         };
         settings_layer {    
             bindings = <
-    &bootloader  &sys_reset   NONE      NONE      NONE      &bootloader &sys_reset &kp KP_NUM &kp CAPS &kp SLCK
-    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 NONE     NONE    NONE    NONE  NONE
-    &out OUT_USB &out OUT_BLE &bt BT_CLR   NONE      NONE      NONE     NONE    NONE    NONE  NONE
-                                           NONE      NONE      NONE     NONE
+    &bootloader &sys_reset NONE NONE NONE      &bootloader &sys_reset NONE NONE NONE
+    NONE NONE NONE NONE NONE                   NONE NONE NONE NONE NONE
+    NONE NONE NONE NONE NONE                   NONE NONE NONE NONE NONE
+                   NONE NONE                   NONE NONE
             >;
         };
     };
