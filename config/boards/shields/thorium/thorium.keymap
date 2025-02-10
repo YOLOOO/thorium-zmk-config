@@ -18,8 +18,8 @@
 #define THROUGH &trans
 
 #define CTRLSPACE &mt LCTRL SPACE
-#define ZSHIFT &mt Z LEFT_SHIFT
-#define SLHSHIFT &mt BSLH RIGHT_SHIFT
+#define ZSHIFT &mt LEFT_SHIFT Z
+#define SLHSHIFT &mt RIGHT_SHIFT BACKSLASH
 
 #define NUMB &mo 1
 #define SYMB &mo 2
@@ -59,7 +59,7 @@
     &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
     NONE NONE NONE NONE NONE                NONE NONE NONE NONE NONE
     NONE NONE NONE NONE NONE                &kp F11 &kp F12 NONE NONE NONE
-                   NONE NONE                SYMB THROUGH
+                   ACCEN SETT                SYMB THROUGH
             >;
         };
         accent_layer {
