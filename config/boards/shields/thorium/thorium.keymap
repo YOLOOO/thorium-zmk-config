@@ -17,9 +17,6 @@
 #define NONE &none
 #define THROUGH &trans
 
-#define X
-#define X
-#define X
 #define CTRLSPACE &mt LCTRL SPACE
 #define ZSHIFT &mt Z LEFT_SHIFT
 #define SLHSHIFT &mt BSLH RIGHT_SHIFT
