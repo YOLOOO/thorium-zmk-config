@@ -21,11 +21,11 @@
 #define ZSHIFT &mt Z LEFT_SHIFT
 #define SLHSHIFT &mt BSLH RIGHT_SHIFT
 
-#define NUMB &mo NUM
-#define SYMB &mo SYM
-#define FUNC &mo FNC
-#define ACCEN &mo ACCENT
-#define SETT &mo SETTINGS
+#define NUMB &mo 1
+#define SYMB &mo 2
+#define FUNC &mo 3
+#define ACCEN &mo 4
+#define SETT &mo 5
 
 /* device tree */
 
