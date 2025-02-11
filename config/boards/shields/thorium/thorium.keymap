@@ -13,7 +13,7 @@
 #define ACCENT 4
 #define SETTINGS 5
 
-/* keycode special */
+/* keycode */
 #define NONE &none
 #define THROUGH &trans
 
@@ -35,7 +35,7 @@
     &kp Q     &kp W     &kp E     &kp R     &kp T     &kp Y     &kp U     &kp I     &kp O     &kp P
     &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp KP_SLASH
     ZSHIFT    &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp DOT   SLHSHIFT
-                                  CTRLSPACE SYMB      BACKSPACE FUNC
+                                  CTRLSPACE SYMB      &kp BACKSPACE FUNC
             >;
         };
         num_layer {
@@ -59,7 +59,7 @@
     &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
     NONE NONE NONE NONE NONE                NONE NONE NONE NONE NONE
     NONE NONE NONE NONE NONE                &kp F11 &kp F12 NONE NONE NONE
-                   ACCEN SETT                SYMB THROUGH
+                   ACCEN SETT               SYMB THROUGH
             >;
         };
         accent_layer {
