@@ -19,50 +19,50 @@
         compatible = "zmk,keymap";
         base_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
             >;
         };
         num_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
             >;
         };
         sym_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
                 >;
         };  
         accent_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
             >;
         };
         func_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
             >;
         };
         settings_layer {
             bindings = <
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                NONE  NONE  NONE  NONE  NONE   NONE  NONE  NONE  NONE  NONE
-                                  NONE  NONE   NONE  NONE
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                &kp A  &kp A  &kp A  &kp A  &kp A   &kp A  &kp A  &kp A  &kp A  &kp A
+                                  &kp A  &kp A   &kp A  &kp A
             >;
         };
     };
