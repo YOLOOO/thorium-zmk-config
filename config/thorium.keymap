@@ -53,25 +53,67 @@
             label = "SHIFTINSERT";
         };
 
-        quots: quots {
+        pipe: pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp NUMBER_2>;
-            label = "QUOTS";
+            bindings = <&kp RIGHT_ALT &kp NUBS>;
+            label = "PIPE";
         };
 
         at: at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_ALT &kp NUMBER_2>;
+            bindings = <&kp RALT &kp NUMBER_2>;
             label = "AT";
         };
 
-        leftPar: leftPar {
+        parR: parL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp N8>;
-            label = "LEFTPAR";
+            bindings = <&kp LEFT_SHIFT &kp N9>;
+            label = "PARL";
+        };
+
+        brackL: brackL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp N7>;
+            label = "BRACKL";
+        };
+
+        brackR: brackR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp N0>;
+            label = "BRACKR";
+        };
+
+        hakL: hakL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp N8>;
+            label = "HAKL";
+        };
+
+        hakR: hakR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp N9>;
+            label = "HAKR";
+        };
+
+        graterThan: graterThan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp NUBS>;
+            label = "GRATERTHAN";
+        };
+
+        amps: amps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp NUMBER_6>;
+            label = "AMPS";
         };
     };
 
@@ -98,10 +140,10 @@
 
         sym_layer {
             bindings = <
-&kp TAB  &none    &kp HASH  &kp ESC    &none  &kp ASTERISK  &none  &none            &none          &kp LEFT_BRACKET
-&none    &kp END  &kp HOME  &kp ENTER  &none  &none         &none  &none            &kp SEMICOLON  &kp COLON
-&none    &none    &none     &none      &none  &none         &none  &kp EXCLAMATION  &none          &none
-                            &none      &none  &none         &none
+&kp TAB   &kp AT       &kp HASH  &kp ESC  &amps  &kp ASTERISK  &parR    &none            &none          &kp LEFT_BRACKET
+&at       &none        &none     &none    &none  &brackL       &brackR  &none            &kp SEMICOLON  &kp COLON
+&kp NUBS  &graterThan  &pipe     &none    &none  &hakL         &hakR    &kp EXCLAMATION  &kp UNDER      &none
+                                 &none    &none  &kp ENTER     &none
             >;
         };
 
