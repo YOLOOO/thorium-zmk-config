@@ -115,6 +115,13 @@
             bindings = <&kp LEFT_SHIFT &kp NUMBER_6>;
             label = "AMPS";
         };
+
+        baslash: plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp MINUS>;
+            label = "PLUS";
+        };
     };
 
     keymap {
@@ -124,7 +131,7 @@
             bindings = <
 &kp Q             &kp W  &kp E  &kp R  &kp T            &kp Y            &kp U   &kp I      &kp O       &kp P
 &kp A             &kp S  &kp D  &kp F  &kp G            &kp H            &kp J   &kp K      &kp L       &kp KP_SLASH
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B            &kp N            &kp M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B            &kp N            &kp M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
                                 &mo 2  &mt LCTRL SPACE  &lt 4 BACKSPACE  &tog 1
             >;
         };
@@ -141,9 +148,9 @@
         sym_layer {
             bindings = <
 &kp TAB   &kp AT       &kp HASH  &kp ESC  &amps  &kp ASTERISK  &parR    &none            &none          &kp LEFT_BRACKET
-&at       &none        &none     &none    &none  &brackL       &brackR  &none            &kp SEMICOLON  &kp COLON
+&at       &none        &none     &none    &none  &brackL       &brackR  &none            &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp NUBS  &graterThan  &pipe     &none    &none  &hakL         &hakR    &kp EXCLAMATION  &kp UNDER      &none
-                                 &none    &none  &kp ENTER     &none
+                                 &none    &none  &kp ENTER     &mo 3
             >;
         };
 
