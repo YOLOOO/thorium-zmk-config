@@ -52,6 +52,27 @@
             bindings = <&kp RIGHT_SHIFT &kp INSERT>;
             label = "SHIFTINSERT";
         };
+
+        quots: quots {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp NUMBER_2>;
+            label = "QUOTS";
+        };
+
+        at: at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_ALT &kp NUMBER_2>;
+            label = "AT";
+        };
+
+        leftPar: leftPar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp N8>;
+            label = "LEFTPAR";
+        };
     };
 
     keymap {
@@ -60,45 +81,45 @@
         base_layer {
             bindings = <
 &kp Q             &kp W  &kp E  &kp R  &kp T            &kp Y            &kp U   &kp I      &kp O       &kp P
-&kp A             &kp S  &kp D  &kp F  &kp G            &kp H            &kp J   &kp K      &kp L       &kp SLASH
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B            &kp N            &kp M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT BACKSLASH
+&kp A             &kp S  &kp D  &kp F  &kp G            &kp H            &kp J   &kp K      &kp L       &tog 3
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B            &kp N            &kp M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
                                 &mo 2  &mt LCTRL SPACE  &lt 4 BACKSPACE  &tog 1
             >;
         };
 
         num_layer {
             bindings = <
-&kp TAB  &none  &none  &kp ESC  &none           &kp N7        &kp N8        &kp N9        &kp MINUS      &kp PLUS
-&none    &none  &none  &none    &none           &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE  &kp ASTERISK
-&none    &none  &none  &none    &none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_EQUAL
-                       &trans   &kp LEFT_SHIFT  &kp N0        &trans
+&kp TAB  &none  &none  &kp ESC  &none  &kp N7        &kp NUMBER_8  &kp N9        &kp MINUS      &kp PLUS
+&none    &none  &none  &none    &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE  &kp ASTERISK
+&none    &none  &none  &none    &none  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_EQUAL
+                       &none    &none  &kp N0        &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp TAB        &kp DOUBLE_QUOTES  &kp HASH  &kp ESC    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ShiftInsert     &none          &kp LEFT_BRACKET
-&kp AT         &kp END            &kp HOME  &kp ENTER  &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp SEMICOLON  &kp DOUBLE_QUOTES
-&kp LESS_THAN  &kp GREATER_THAN   &kp PIPE  &kp MINUS  &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &none
-                                            &Copy      &trans         &trans                &Paste
+&kp TAB        &quots            &kp HASH  &kp ESC    &kp AMPERSAND  &leftPar          &kp RIGHT_PARENTHESIS  &ShiftInsert     &none          &kp LEFT_BRACKET
+&at            &kp END           &kp HOME  &kp ENTER  &none          &kp LEFT_BRACE    &kp RIGHT_BRACE        &none            &kp SEMICOLON  &kp DOUBLE_QUOTES
+&kp LESS_THAN  &kp GREATER_THAN  &kp PIPE  &none      &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &none
+                                           &Copy      &trans         &trans            &Paste
             >;
         };
 
         accent_layer {
             bindings = <
-&none  &none  &none  &none  &none   &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none
-&none  &none  &none  &none  &none   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &none  &none  &none  &none   &none  &none           &none           &none            &none
-                     &none  &trans  &none  &trans
+&none  &none  &none  &none  &none  &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none
+&none  &none  &none  &none  &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&none  &none  &none  &none  &none  &none  &none           &none           &none            &none
+                     &none  &none  &none  &none
             >;
         };
 
         func_layer {
             bindings = <
-&AltQuit  &kp F2  &kp F3  &kp F4  &kp F5   &none    &kp HOME  &kp UP    &kp END    &none
-&kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&trans    &none   &none   &none   &none    &kp F11  &kp F12   &none     &none      &trans
-                          &none   &mo 3    &trans   &none
+&AltQuit        &kp F2  &kp F3  &kp F4  &kp F5   &none    &kp HOME  &kp UP    &kp END    &none
+&kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&kp LEFT_SHIFT  &none   &none   &none   &none    &kp F11  &kp F12   &none     &none      &kp RIGHT_SHIFT
+                                &none   &none    &trans   &none
             >;
         };
 
