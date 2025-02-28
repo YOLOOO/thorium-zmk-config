@@ -141,7 +141,7 @@
 
         num_layer {
             bindings = <
-&kp TAB  &none  &none  &kp ESC  &none  &kp N7        &kp NUMBER_8  &kp N9        &kp QUESTION   &kp MINUS
+&kp TAB  &none  &none  &kp ESC  &none  &kp N7        &kp NUMBER_8  &kp N9        &kp SLASH      &kp MINUS
 &trans   &none  &none  &none    &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE  &kp PIPE
 &none    &none  &none  &none    &none  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp RIGHT_PARENTHESIS
                        &none    &none  &kp N0        &trans
@@ -168,10 +168,10 @@
 
         func_layer {
             bindings = <
-&kp F1          &kp F2  &kp F3  &kp F4  &kp F5   &none    &kp HOME  &kp UP    &kp END    &kp LA(F4)
-&kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &none    &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(LA(DELETE))
-&kp LEFT_SHIFT  &none   &none   &none   &none    &kp F11  &kp F12   &none     &none      &kp RIGHT_SHIFT
-                                &none   &none    &trans   &none
+&kp F1          &kp F2  &kp F3  &kp F4  &kp F5   &kp RS(INSERT)  &kp HOME  &kp UP    &kp END    &kp LA(F4)
+&kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &none           &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(LA(DELETE))
+&kp LEFT_SHIFT  &none   &none   &none   &none    &kp F11         &kp F12   &none     &none      &kp RIGHT_SHIFT
+                                &none   &none    &trans          &none
             >;
         };
 
