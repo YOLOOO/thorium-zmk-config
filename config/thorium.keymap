@@ -150,7 +150,7 @@
 
         sym_layer {
             bindings = <
-&kp TAB           &kp AT        &kp HASH  &kp ESC  &none  &kp LS(N8)  &kp LS(N9)  &none            &none          &kp LEFT_BRACKET
+&kp TAB           &kp AT        &kp HASH  &kp ESC  &none  &kp LS(N8)  &kp LS(N9)  &kp LEFT_ALT     &none          &kp LEFT_BRACKET
 &kp RA(NUMBER_2)  &none         &none     &none    &none  &kp RA(N7)  &kp RA(N0)  &none            &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp NUBS          &kp RA(NUBS)  &none     &none    &none  &kp RA(N8)  &kp RA(N9)  &kp EXCLAMATION  &kp UNDER      &trans
                                           &none    &none  &none       &trans
