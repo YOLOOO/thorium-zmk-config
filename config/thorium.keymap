@@ -1,6 +1,6 @@
 #pragma once
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 900
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
