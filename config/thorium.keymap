@@ -160,7 +160,7 @@
         accent_layer {
             bindings = <
 &kp TAB  &none           &msc SCRL_UP    &none            &none  &none      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none
-&none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &kp ENTER  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&mo 5    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &kp ENTER  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
 &none    &none           &none           &none            &none  &none      &none           &none           &none            &none
                                          &none            &none  &none      &none
             >;
@@ -177,10 +177,10 @@
 
         settings_layer {
             bindings = <
-&bootloader   &sys_reset    &none         &none         &none         &bootloader  &sys_reset  &none  &none  &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none        &none       &none  &none  &none
-&out OUT_USB  &out OUT_BLE  &bt BT_CLR    &none         &none         &none        &none       &none  &none  &none
-                                          &none         &to 0         &none        &to 0
+&bootloader   &sys_reset    &none         &none         &none         &bootloader  &sys_reset  &none  &kp BACKSPACE  &kp BACKSPACE
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none        &none       &none  &none          &none
+&out OUT_USB  &out OUT_BLE  &bt BT_CLR    &none         &none         &none        &none       &none  &none          &none
+                                          &to 0         &to 0         &to 0        &to 0
             >;
         };
     };
