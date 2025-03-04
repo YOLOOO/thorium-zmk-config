@@ -32,19 +32,19 @@
 
         num_layer {
             bindings = <
-&kp TAB  &none  &none  &kp ESC  &none                 &kp N7        &kp NUMBER_8   &kp N9        &kp SLASH      &kp MINUS
-&trans   &none  &none  &none    &none                 &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp KP_DIVIDE  &kp PIPE
-&none    &none  &none  &none    &none                 &kp N1        &kp NUMBER_2   &kp NUMBER_3  &kp PERCENT    &kp RIGHT_PARENTHESIS
-                       &none    &kp C_AL_MY_COMPUTER  &kp N0        &kp C_AL_CALC
+&kp TAB  &none  &kp C_AL_MY_COMPUTER  &kp ESC  &none  &kp N7        &kp NUMBER_8   &kp N9        &kp SLASH      &kp MINUS
+&trans   &none  &none                 &none    &none  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp KP_DIVIDE  &kp PIPE
+&none    &none  &none                 &none    &none  &kp N1        &kp NUMBER_2   &kp NUMBER_3  &kp PERCENT    &kp RIGHT_PARENTHESIS
+                                      &none    &none  &kp N0        &kp C_AL_CALC
             >;
         };
 
         sym_layer {
             bindings = <
-&kp TAB           &kp AT        &kp HASH  &kp ESC       &kp LS(NUMBER_6)  &kp LS(N8)     &kp LS(N9)     &none            &none          &kp LEFT_BRACKET
-&kp RA(NUMBER_2)  &none         &none     &kp KP_SLASH  &none             &kp RA(N7)     &kp RA(N0)     &none            &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp NUBS          &kp RA(NUBS)  &none     &none         &none             &kp RA(N8)     &kp RA(N9)     &kp EXCLAMATION  &kp UNDER      &trans
-                                          &none         &none             &kp BACKSPACE  &kp BACKSPACE
+&kp RA(NUMBER_2)  &kp AT        &kp HASH  &kp ESC      &kp LS(NUMBER_6)  &kp LS(N8)     &kp LS(N9)     &kp KP_SLASH     &kp MINUS      &kp LEFT_BRACKET
+&none             &kp RA(PIPE)  &none     &none        &none             &kp RA(N7)     &kp RA(N0)     &none            &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp NUBS          &kp RA(NUBS)  &none     &none        &none             &kp RA(N8)     &kp RA(N9)     &kp EXCLAMATION  &kp UNDER      &trans
+                                          &kp LA(TAB)  &none             &kp BACKSPACE  &kp BACKSPACE
             >;
         };
 
