@@ -41,9 +41,9 @@
 
         sym_layer {
             bindings = <
-&kp RA(NUMBER_2)  &kp AT        &kp HASH  &kp ESC       &kp LS(NUMBER_6)  &kp LS(N8)     &kp LS(N9)     &kp KP_SLASH     &kp RA(MINUS)  &kp NUHS
+&kp RA(NUMBER_2)  &kp AT        &kp HASH  &kp ESC       &kp LS(NUMBER_6)  &kp LS(N8)     &kp LS(N9)     &kp KP_SLASH     &kp RA(MINUS)  &kp LEFT_BRACKET
 &none             &none         &kp TAB   &kp LEFT_ALT  &none             &kp RA(N7)     &kp RA(N0)     &none            &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp NUBS          &kp RA(NUBS)  &none     &none         &none             &kp RA(N8)     &kp RA(N9)     &kp EXCLAMATION  &kp UNDER      &trans
+&kp NUBS          &kp RA(NUBS)  &none     &none         &none             &kp RA(N8)     &kp RA(N9)     &kp EXCLAMATION  &kp UNDER      &kp NUHS
                                           &none         &none             &kp BACKSPACE  &kp BACKSPACE
             >;
         };
